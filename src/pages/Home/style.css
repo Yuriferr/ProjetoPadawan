@@ -29,7 +29,7 @@ body{
     padding: 20px;
 }
 
-img{
+.planet{
     width: 600px;
     height: auto;
     animation-duration: 3s;
