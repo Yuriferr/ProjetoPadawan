@@ -6,7 +6,6 @@
 
 body{
     background-repeat: no-repeat;
-    background-image: linear-gradient(200deg,#7B00DB, #191941);
 }
 
 .container{
@@ -70,8 +69,7 @@ body{
     border: none;
     transition: 1s;
     box-shadow: 0 0 10px #CA18B8;
-    text-shadow: 0 0 5px white;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .btnVisualizar:hover{

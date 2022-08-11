@@ -4,6 +4,11 @@ import './style.css';
 import 'animate.css';
 
 function Home(){
+
+    useEffect(()=>{
+        document.body.style.backgroundImage = 'linear-gradient(200deg,#7B00DB, #191941)'
+    }, [])
+
     return(
         <div className='container'>
                 <div className='box'>

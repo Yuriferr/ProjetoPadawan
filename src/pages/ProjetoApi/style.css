@@ -3,7 +3,6 @@
     text-align: center;
     color: white;
     height: calc(100vh - 62px);
-    background-image: linear-gradient(200deg,#7B00DB, #191941);
     position: absolute;
 }
 
@@ -17,7 +16,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    box-shadow: inset 1px 0 20px #CA18B8;
+    background-color: white;
 }
 
 img{

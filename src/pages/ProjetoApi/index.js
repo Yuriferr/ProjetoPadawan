@@ -6,9 +6,11 @@ import './style.css';
 function ProjetoApi(){
 
     const [loading, setLoading] = useState(true);
-    const [personagens, setPersonagens] = useState([]);
+    const [gatos, setGatos] = useState([]);
 
     useEffect(()=>{
+        document.body.style.backgroundImage = 'linear-gradient(white, white)'
+
         async function loadApi(){
             const response = await api.get(`search?`, {
                 params:{
@@ -16,7 +18,7 @@ function ProjetoApi(){
                     api_key: "1ff3134e-d8ac-4ccc-8265-6e7f89daa81a"
                 }
             })
-            setPersonagens(response.data)
+            setGatos(response.data)
             setLoading(false)
         }
 
@@ -33,10 +35,10 @@ function ProjetoApi(){
 
     return(
         <div className='containerApi'>
-            {personagens.map((item)=>{
+            {gatos.map((item)=>{
                 return(
                     <article key={item.id}>
-                        <img src={item.url}/>
+                        <img className='catImg' src={item.url}/>
                     </article>
                 )
             })}
