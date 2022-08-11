@@ -1,9 +1,10 @@
 .loading{
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     height: calc(100vh - 62px);
     position: absolute;
+    background-color: white;
 }
 
 .loading h1{
@@ -19,11 +20,31 @@
     background-color: white;
 }
 
-img{
-    width: 250px;
-    height: 250px;
-    margin: 30px;
+.catDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 50px;
     border-radius: 20px;
+}
+
+.catDiv img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.catDiv a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #E36036;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 

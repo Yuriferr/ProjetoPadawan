@@ -1,0 +1,11 @@
+.containerTeste{
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.planeta8{
+    width: 500px;
+    height: 500px;
+    transform: translate(0px);
+    animation: float 5s ease-in-out infinite;
+}

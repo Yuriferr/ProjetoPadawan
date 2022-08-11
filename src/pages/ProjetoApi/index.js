@@ -9,8 +9,6 @@ function ProjetoApi(){
     const [gatos, setGatos] = useState([]);
 
     useEffect(()=>{
-        document.body.style.backgroundImage = 'linear-gradient(white, white)'
-
         async function loadApi(){
             const response = await api.get(`search?`, {
                 params:{
@@ -38,7 +36,10 @@ function ProjetoApi(){
             {gatos.map((item)=>{
                 return(
                     <article key={item.id}>
-                        <img className='catImg' src={item.url}/>
+                        <div className='catDiv'>
+                            <img className='' src={item.url}/>
+                            <Link to='/'>VOLTAR</Link>
+                        </div>
                     </article>
                 )
             })}

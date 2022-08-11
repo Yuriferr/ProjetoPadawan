@@ -5,6 +5,9 @@ header{
     width: 100%;
     height: 60px;
     border-bottom: 2px solid white;
+    background-color:#7B00DB;
+    box-shadow: 0 2px 20px #CA18B8;
+    position: relative;
 }
 
 .logo{

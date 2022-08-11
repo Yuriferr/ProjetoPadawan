@@ -17,7 +17,7 @@ function Home(){
                             <h3 className='animate__fadeIn'>Desenvolvedor Full-stack</h3>
                             <Link to='/api' className='btnVisualizar animate__fadeIn'>Visualizar ➜</Link>
                         </div>
-                        <img className='planet animate__animated animate__zoomIn' src={require('../../assets/Planet-9.png')}/>
+                        <img className='planet' src={require('../../assets/Planet-9.png')}/>
                 </div>
         </div>
     )
